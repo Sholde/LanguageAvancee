@@ -20,3 +20,13 @@
 		(t (min_max_bis (cdr l) (car l) (car l)))
 	)
 )
+
+(defun prod_max (l)
+	(let (
+			(max1 (cadr (min_max l))))
+			(let (
+				(max2 (cadr (min_max (remove max1 l)))))
+				(* max1 max2)
+			)
+	)
+)

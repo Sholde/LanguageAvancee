@@ -1,11 +1,5 @@
-(defun carre (x)
-	(cond
-		((numberp x)
-			(cond
-				((> x 5) (* x x))
-				(t nil)
-			)
-		)
-		(t nil)
-	)
+(defun carre (n)
+	(and (numberp n)
+		(>= n 5)
+		(* n n))
 )
