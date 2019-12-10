@@ -1,0 +1,3 @@
+(defun recopie (lecture ecriture)
+	
+)
